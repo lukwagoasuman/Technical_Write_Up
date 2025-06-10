@@ -43,7 +43,3 @@ Developers
 Stakeholders require detailed insight into the vulnerabilities found, the methods used to exploit them, and recommendations for remediation.
 
 follow me: www.linkedin.com/in/asumanlukwago 
-![TryHackMe Badge](https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1032228)
-
-[View my TryHackMe profile](https://tryhackme.com/profile/1032228)
-
